@@ -34,7 +34,7 @@ class WMTS100ExceptionHandler(XMLExceptionHandler):
     content_type = 'text/xml'
 
     status_codes = {
-        None: 500,
+        None: 400,
         'TileOutOfRange': 400,
         'MissingParameterValue': 400,
         'InvalidParameterValue': 400,
